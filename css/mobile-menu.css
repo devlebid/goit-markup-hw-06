@@ -10,6 +10,9 @@
   visibility: hidden;
   pointer-events: none;
 }
+.mobile-menu.is-open {
+  visibility: visible;
+}
 .mobile-container {
   display: flex;
   flex-direction: column;

@@ -79,6 +79,7 @@ address {
 .is-open {
     display: block;
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
 }
 

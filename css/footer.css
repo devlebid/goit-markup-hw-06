@@ -195,7 +195,7 @@
     padding: 100px 0;
   }
   .footer-container {
-    padding: 0 15px;
+    padding: 0;
     gap: 120px;
     flex-wrap: nowrap;
   }
