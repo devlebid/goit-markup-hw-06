@@ -1,18 +1,9 @@
-/* Global styles*/
-.container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+.hide {
+    display: none !important;
 }
-
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #434455;
     background-color: #fff;
 }
@@ -22,60 +13,27 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 ul, ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-ul {
-    list-style-type: none;
-}
 a {
     text-decoration: none;
-    color: inherit;
+    color: currentColor;
 }
 button {
+    padding: 0;
+    border: none;
     cursor: pointer;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 address {
     font-style: normal;
-}
-
-/* Base styles*/
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    color: #2e2f42;
-}
-.section-caption {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #2e2f42;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-}
-
-/* Button */
-.btn {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    line-height: 1.5;
 }
 .sr-only {
   position: absolute;
@@ -87,4 +45,50 @@ address {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+.container {
+    max-width: 320px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 96px 0;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+    max-width: 768px;
+}
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+  max-width: 1158px;
+  padding: 0 15px;
+}
+
+.section {
+    padding: 120px 0;
+}
 }
